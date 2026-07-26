@@ -1,3 +1,10 @@
+# 1.0.0 (2026-07-26)
+
+
+### Features
+
+* initial ScalePad API client — Core, Lifecycle Manager, ControlMap, Backup Radar, and Quoter coverage ([f40ab88](https://github.com/wyre-technology/node-scalepad/commit/f40ab888a02c970a15906d1263418c3d1f0594ef))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
