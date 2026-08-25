@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/WYRE-AI/node-scalepad/compare/v1.0.0...v1.0.1) (2026-08-25)
+
+
+### Bug Fixes
+
+* migrate to WYRE-AI org (npm scope, ghcr namespace, registry) ([#1](https://github.com/WYRE-AI/node-scalepad/issues/1)) ([197dd86](https://github.com/WYRE-AI/node-scalepad/commit/197dd86ed7345c5b22302dd93779d2a1280dade2))
+
 # 1.0.0 (2026-07-26)
 
 
