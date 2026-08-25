@@ -1,4 +1,4 @@
-# @wyre-technology/node-scalepad
+# @wyre-ai/node-scalepad
 
 Node.js client library for the ScalePad platform APIs — **Core**, **Lifecycle
 Manager**, **ControlMap**, **Backup Radar**, and **Quoter** — with zero runtime
@@ -9,7 +9,7 @@ dependencies (native `fetch` only).
 The package is published to GitHub Packages. Add to your `.npmrc`:
 
 ```ini
-@wyre-technology:registry=https://npm.pkg.github.com
+@wyre-ai:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
 ```
 
@@ -17,13 +17,13 @@ Then:
 
 ```bash
 export NODE_AUTH_TOKEN=$(gh auth token)
-npm install @wyre-technology/node-scalepad
+npm install @wyre-ai/node-scalepad
 ```
 
 ## Usage
 
 ```ts
-import { ScalePadClient } from '@wyre-technology/node-scalepad';
+import { ScalePadClient } from '@wyre-ai/node-scalepad';
 
 const client = new ScalePadClient({
   apiKey: process.env.SCALEPAD_API_KEY!,
@@ -106,7 +106,7 @@ ScalePad platform APIs paginate with `cursor` + `page_size` (1–200). The
 `paginate` helper walks every page:
 
 ```ts
-import { paginate } from '@wyre-technology/node-scalepad';
+import { paginate } from '@wyre-ai/node-scalepad';
 
 for await (const item of paginate((cursor) =>
   client.coreClients.list({ cursor, page_size: 200 })
